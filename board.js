@@ -3,7 +3,6 @@ class Board {
     this.map = [];
     this.colorMap = {};
     this.isGameOver = false;
-    //update below to work with any sized board
     for (let i = 0; i < boardHeight; i++) {
       this.map.push([]);
     }
@@ -26,11 +25,10 @@ class Board {
   add(tetrimino) {
     for (const square of tetrimino.squares) {
       //this is intentional, leaving for now
-      if(square.y <= 1) {
+      if(square.y === 1) {
         this.isGameOver = true;
       }
       this.map[square.y - 1][square.x] = 1;
-      this.colorMap[`${square.y - 1}${square.x}`] = square.color;
     }
   }
 
@@ -80,8 +78,7 @@ class Board {
       for (let j = 0; j < boardWidth; j++) {
         if (this.map[i][j] === 1) {
           try {
-            let color = this.colorMap[`${i}${j}`];
-            fill(color.r, color.g, color.b);
+            fill(100);
             rect(
               j * squareWidth,
               (i * squareWidth) / 1,
