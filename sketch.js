@@ -53,10 +53,8 @@ function draw() {
    }
 
    board.clearLines();
-   if (board.gameOver()) {
+   if (board.isGameOver) {
       popup.style.display = "block";
-      if (!startGameBtn.innerHTML.indexOf("g"))
-         startGameBtn.innerText += " Again?";
       scoreDOM.children[1].innerHTML = score;
       scoreDOM.style.display = "block";
       intro.style.display = "none";
