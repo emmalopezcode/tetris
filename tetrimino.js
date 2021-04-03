@@ -1,5 +1,3 @@
-
-
 class Tetrimino {
   constructor(string, location) {
     let offset = 0;
@@ -77,6 +75,4 @@ class Tetrimino {
       s.draw();
     }
   }
-
 }
-

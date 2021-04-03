@@ -55,21 +55,18 @@ class Board {
       }
     }
 
-
     for (const line of lines) {
       this.popLine(line);
     }
 
-    this.score(lines.length)
-
+    this.score(lines.length);
   }
 
   score(numLines) {
     if (numLines) {
       totalLines += numLines;
       multiplier++;
-      if (speed)
-        speed--;
+      if (speed) speed--;
       score += multiplier * Math.pow(2, numLines) * 10;
     }
   }
@@ -85,11 +82,9 @@ class Board {
   }
 
   draw() {
-
     for (let i = 0; i < boardHeight; i++) {
       for (let j = 0; j < boardWidth; j++) {
         if (this.map[i][j] === 1) {
-
           try {
             let color = this.colorMap[`${i}${j}`];
             fill(color.r, color.g, color.b);
@@ -100,16 +95,14 @@ class Board {
               squareWidth
             );
           } catch (e) {
-            console.log(e)
+            console.log(e);
             console.log(this.map);
             console.log(this.colorMap);
             console.log(i);
             console.log(j);
           }
-
         }
       }
     }
   }
 }
-

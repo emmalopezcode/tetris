@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script src="./p5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
 
-<head>
-  <script src="./p5.min.js""></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta charset="utf-8">
-</head>
+  <body>
+    <div class="wrapper">
+      <div id="canvas"></div>
+    </div>
 
-<body>
-
-  <div class="wrapper">
-    <div id="canvas"></div>
-  </div>
-
-  <div class='popup-container'>
-    <div class="popup">
-      <div class="wrapper" style='margin:0 auto;'>
-        <h1 style='margin-bottom: 10px;'>Tetris</h1>
-        <p class='intro'>Welcome to the wonderful world
-          of Tetris. Left
-          and right arrow keys move your tetrimino and the space bar will rotate it.</p>
-        <div class="score">
-          <h3 style='margin:20px auto; width:fit-content;'>Your score was:</h3>
-          <h2 style='margin:10px auto; width:fit-content;'></h2>
+    <div class="popup-container">
+      <div class="popup">
+        <div class="wrapper" style="margin: 0 auto">
+          <h1 style="margin-bottom: 10px">Tetris</h1>
+          <p class="intro">
+            Welcome to the wonderful world of Tetris. Left and right arrow keys
+            move your tetrimino and the space bar will rotate it.
+          </p>
+          <div class="score">
+            <h3 style="margin: 20px auto; width: fit-content">
+              Your score was:
+            </h3>
+            <h2 style="margin: 10px auto; width: fit-content"></h2>
+          </div>
+          <div>
+            <button class="start-game">Play</button>
+          </div>
         </div>
-        <div>
-          <button class='start-game'>Play</button>
-        </div>
-
       </div>
     </div>
-  </div>
-  <script src="sketch.js"></script>
-  <script src="square.js"></script>
-  <script src="tetrimino.js"></script>
-  <script src="background.js"></script>
-  <script src="queue.js"></script>
-  <script src="board.js"></script>
-  <script src="sidebar.js"></script>
-  <script src="active-tetrimino.js"></script>
-  <script src="button-events.js"></script>
-
-
-
-</body>
-
+    <script src="sketch.js"></script>
+    <script src="square.js"></script>
+    <script src="tetrimino.js"></script>
+    <script src="background.js"></script>
+    <script src="queue.js"></script>
+    <script src="board.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="active-tetrimino.js"></script>
+    <script src="button-events.js"></script>
+  </body>
 </html>
