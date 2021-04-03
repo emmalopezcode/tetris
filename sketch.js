@@ -1,4 +1,4 @@
-t squareWidth = 40;
+let squareWidth = 40;
 const boardHeight = 15;
 const boardWidth = 10;
 const sideBarWidth = 50;
