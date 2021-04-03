@@ -78,18 +78,9 @@ function keyPressed() {
    if (keyCode == RIGHT_ARROW) {
       active.updatePosition(1, 0);
    }
-   if (keyCode == DOWN_ARROW) {
-      currSpeed = speed;
-      speed += 10;
-   }
 
    if (key === " ") {
       active.rotate();
    }
 }
 
-function keyReleased() {
-   if (keyCode == DOWN_ARROW) {
-      speed = currSpeed;
-   }
-}
