@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="p5.animate.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div id="canvas"></div>
+  </div>
+
+  <div class='popup-container'>
+    <div class="popup">
+      <div class="wrapper">
+        <h1 style='margin-bottom: 10px;'>Tetris</h1>
+        <p class='intro' style='margin:0 20px; font-size: .85rem; line-height: 1.3rem;'>Welcome to the wonderful world
+          of Tetris. Left
+          and right arrow keys move your tetrimino and the space bar will rotate it.</p>
+        <div class="score wrapper">
+          <h3>Your score was:</h3>
+          <h2 style='margin:0px 10px 35px 0px;'>1345</h2>
+        </div>
+        <div class="buttons">
+          <button class='start-game'>Play</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="sketch.js"></script>
+  <script src="square.js"></script>
+  <script src="tetrimino.js"></script>
+  <script src="background.js"></script>
+  <script src="queue.js"></script>
+  <script src="board.js"></script>
+  <script src="sidebar.js"></script>
+  <script src="active-tetrimino.js"></script>
+  <script src="button-events.js"></script>
+
+
+
+</body>
+
+</html>
