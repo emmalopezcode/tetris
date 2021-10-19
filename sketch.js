@@ -58,8 +58,6 @@ function draw() {
       scoreDOM.children[1].innerHTML = score;
       scoreDOM.style.display = "block";
       intro.style.display = "none";
-      score = 0;
-      score = 0;
       speed = 30;
       multiplier = 1;
       totalLines = 0;

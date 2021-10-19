@@ -7,4 +7,5 @@ startGameBtn.addEventListener("click", () => {
   popup.style.display = "none";
   board.isGameOver = false;
   playing = true;
+  score = 0;
 });

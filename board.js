@@ -25,7 +25,7 @@ class Board {
   add(tetrimino) {
     for (const square of tetrimino.squares) {
       //this is intentional, leaving for now
-      if(square.y === 1) {
+      if(square.y <= 1) {
         this.isGameOver = true;
       }
       this.map[square.y - 1][square.x] = 1;
@@ -77,7 +77,6 @@ class Board {
     for (let i = 0; i < boardHeight; i++) {
       for (let j = 0; j < boardWidth; j++) {
         if (this.map[i][j] === 1) {
-          try {
             fill(100);
             rect(
               j * squareWidth,
@@ -85,13 +84,6 @@ class Board {
               squareWidth,
               squareWidth
             );
-          } catch (e) {
-            console.log(e);
-            console.log(this.map);
-            console.log(this.colorMap);
-            console.log(i);
-            console.log(j);
-          }
         }
       }
     }
